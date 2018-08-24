@@ -4,4 +4,4 @@ RUN curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent3.sh | s
 
 EXPOSE 24224
 
-CMD [ "sh", "-c", "td-agent", "-c", "$FLUENTD_CONF" ]
+CMD [ "sh", "-c", "td-agent -c $FLUENTD_CONF" ]
